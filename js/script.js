@@ -13,5 +13,14 @@ $(function() {
    $("p").hide();
    $("p").slideDown(1000);
    $("p").slideToggle();
+   $(".blue-box").animate({
+      "margin-left": "+=200px",
+      
+   }, 1000, "linear");
+   $(".blue-box").animate({
+      "margin-left": "-=200px",
+      
+   }, 1000, "linear");
+
   
 });
