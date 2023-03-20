@@ -12,7 +12,7 @@ $(function() {
    $(".blue-box").slideDown(2000);
    $("p").hide();
    $("p").slideDown(1000);
-   $("p").slideToggle();
+   // $("p").slideToggle();
    $(".blue-box").animate({
       "margin-left": "+=200px",
       
@@ -25,6 +25,9 @@ $(function() {
       "margin-top": "25px"
    }, 1000);
 
+   $("p").animate({
+      fontSize: "20px"
+   }, 1000)
 
   
 });
