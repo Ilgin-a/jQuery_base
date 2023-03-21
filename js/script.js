@@ -63,7 +63,7 @@ console.log(galleryImage.attr("src"));
 }, 2000); */
 
 
-$(".gallery").css("display", "none"); //.hide()
+/* $(".gallery").css("display", "none"); //.hide()
 
 var redBox = $(".red-box");
 console.log(redBox.css("width"));
@@ -78,7 +78,14 @@ var properties = $("p").css(["font-size", "line-height", "color"]);
 console.log(properties);
 console.log(properties["font-size"]);
 
-redBox.css("user-select", "none");
+redBox.css("user-select", "none"); */
+
+$("a").addClass("fancy-link"); // class="..."
+$("p:first").addClass("large emphasize");
+
+$("li li").addClass(function(index){
+   $(this).addClass("item-" + index);
+});
 
 
 });
