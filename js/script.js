@@ -45,7 +45,7 @@ $(function() {
 $("#list").css("background-color", "rgba(180, 180, 30, 0.8)");
 $("input[type='text']").css("background-color", "rgba(180, 180, 30, 0.8)"); */
 
-var galleryImage = $(".gallery").find("img").first();
+/* var galleryImage = $(".gallery").find("img").first();
 var images = [
    "images/laptop-mobile_small.jpg",
    "images/laptop-on-table_small.jpg",
@@ -60,7 +60,12 @@ galleryImage.fadeOut(function(){
    $(this).fadeIn();
 });
 console.log(galleryImage.attr("src"));
-}, 2000);
+}, 2000); */
 
+
+$(".gallery").css("display", "none"); //.hide()
+
+var redBox = $(".red-box");
+console.log(redBox.css("width"));
 
 });
