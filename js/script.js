@@ -80,13 +80,24 @@ console.log(properties["font-size"]);
 
 redBox.css("user-select", "none"); */
 
-$("a").addClass("fancy-link"); // class="..."
+/* $("a").addClass("fancy-link"); // class="..."
 $("p:first").addClass("large emphasize");
 
 $("li li").addClass(function(index){
    $(this).addClass("item-" + index);
 });
 
-$(".red-box").removeClass("red-box").addClass("blue-box");
+$(".red-box").removeClass("red-box").addClass("blue-box"); */
+
+var gallery = $(".gallery");
+var images = [
+   "images/laptop-mobile_small.jpg",
+   "images/laptop-on-table_small.jpg",
+   "images/people-office-group-team_small.jpg"];
+
+   gallery.data("availableImages", images);
+   console.log(gallery.data("availableImages"));
+
+
 
 });
