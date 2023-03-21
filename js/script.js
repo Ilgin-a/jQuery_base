@@ -98,11 +98,27 @@ var images = [
    gallery.data("availableImages", images);
    console.log(gallery.data("availableImages")); */
 
-var firstPar = $("p:first");
+/* var firstPar = $("p:first");
 console.log(firstPar.text());
 console.log(firstPar.html());
 
 firstPar.text("<strong>Hello</strong> World!");
-firstPar.html("<strong>Hello</strong> World!");
+firstPar.html("<strong>Hello</strong> World!"); */
+
+
+var pokeapiUrl = "https://pokeapi.co/api/v2/generation/1";
+
+$.getJSON(pokeapiUrl).done(function(data){
+   console.log(data);
+   $.each(data.pokemon_species, function(index, pokemon){
+      var name = pokemon.name.charAt(0).toUpperCase() + pokemon.name.slice(1);
+      var par = $("<p>").html("Pokémon species no. " + (index+1) + " is " + name);
+      par.appendTo("#pokemon");
+   });
+}).fail(function(){
+   console.log("Request to Pokeapi failed.");
+}).always(function(){
+   console.log("Pokemon is awesome.");
+});
 
 });
