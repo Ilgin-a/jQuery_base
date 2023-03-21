@@ -87,5 +87,6 @@ $("li li").addClass(function(index){
    $(this).addClass("item-" + index);
 });
 
+$(".red-box").removeClass("red-box").addClass("blue-box");
 
 });
