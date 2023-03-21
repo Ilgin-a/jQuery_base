@@ -89,15 +89,17 @@ $("li li").addClass(function(index){
 
 $(".red-box").removeClass("red-box").addClass("blue-box"); */
 
-var gallery = $(".gallery");
+/* var gallery = $(".gallery");
 var images = [
    "images/laptop-mobile_small.jpg",
    "images/laptop-on-table_small.jpg",
    "images/people-office-group-team_small.jpg"];
 
    gallery.data("availableImages", images);
-   console.log(gallery.data("availableImages"));
+   console.log(gallery.data("availableImages")); */
 
-
+var firtPar = $("p:first");
+console.log(firstPar.text());
+console.log(firstPar.html());
 
 });
