@@ -68,4 +68,7 @@ $(".gallery").css("display", "none"); //.hide()
 var redBox = $(".red-box");
 console.log(redBox.css("width"));
 
+redBox.css("background-color", "#AA7700");
+$("p").css("font-size", "18px");
+
 });
