@@ -98,8 +98,11 @@ var images = [
    gallery.data("availableImages", images);
    console.log(gallery.data("availableImages")); */
 
-var firtPar = $("p:first");
+var firstPar = $("p:first");
 console.log(firstPar.text());
 console.log(firstPar.html());
+
+firstPar.text("<strong>Hello</strong> World!");
+firstPar.html("<strong>Hello</strong> World!");
 
 });
