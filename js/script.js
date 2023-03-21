@@ -76,5 +76,9 @@ redBox.css("width", "+=20px");
 
 var properties = $("p").css(["font-size", "line-height", "color"]);
 console.log(properties);
+console.log(properties["font-size"]);
+
+redBox.css("user-select", "none");
+
 
 });
